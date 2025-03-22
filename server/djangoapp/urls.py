@@ -14,5 +14,5 @@ urlpatterns = [
     # path for dealer reviews view
 
     # path for add a review view
-
+    path('logout/', views.logout_request, name='logout'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
